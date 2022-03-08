@@ -70,3 +70,19 @@ select{
     background-color: #090909;
     color: #e8e8e8;
 }
+
+.page-footer {
+  font: inherit;
+  margin-top: 1.8rem;
+  background-color: black;
+  color: white;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: rgb(168, 163, 163);
+}
+
+.page-footer a:hover {
+  color: white;
+}

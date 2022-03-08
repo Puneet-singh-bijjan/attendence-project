@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head') %> 
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mark My Attencence</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Student Attendence</a>
+                        <a class="nav-link" href="#">Login/Signup</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="heading">
+            <h2>Welcome to the Mark My Attencence</h1>
+                <p>A simple way to mark student attendence</p>
+        </section>
+        <section id="form-section">
+            <h4>Genereate your barcode by entering the following details</h4>
+            <div>
+                <form action="">
+                    <label class="display-block" for="subject">Enter your subject name:</label>
+                    <input class="display-block" type="text" id="subject" name="subject">
+                    <label class="display-block" for="faculty">Faculty Name:</label>
+                    <input class="display-block" type="text" id="faculty" name="faculty">
+                    <label for="course">Select course</label>
+                    <select id="course" name="course">
+                        <option value="FYMCA">FYMCA</option>
+                        <option value="FYMBA">FYMBA</option>
+                        <option value="SYMCA">SYMCA</option>
+                        <option value="SYMBA">SYMBA</option>
+                    </select>
+                    <button type="button" class="button">Generate</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="page-footer">
+
+        <%- include('footer') %> 
+
+    </footer>
+
+</body>
+
+</html>
